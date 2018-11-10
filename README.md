@@ -10,7 +10,7 @@ findElements()
 <br>On One Match : returns list of one WebElement only
 <br>On One+ Match : returns list with all matching instance
 
-### 1)Difference between a single and double slash used in XPath
+### 2)Difference between a single and double slash used in XPath
 Usually absolute xpath starts with single slash. When use use absolute xpath, you will be covering whole path to the element.
 
 Relative xpath starts with double slash. In that case you will be first finding unique parent node and path from there to the element.
