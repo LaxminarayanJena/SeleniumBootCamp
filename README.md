@@ -36,3 +36,17 @@ Relative xpath starts with double slash. In that case you will be first finding 
 <br>PASSED: composeEmail
 <br>PASSED: checkinbox
 
+
+### 4)What is difference between StaleElementReferenceException and NoSuchElementException and ElementNotVisibleException  ?
+
+1. StaleElementReferenceException :- When Selenium trying to interact with an element at that time page got refreshed or ajax calls happened then selenium throw this exception.
+(Internally when selenium interacting the element it creates a random ID by using this selenium interact with the element but if page got refreshed or ajax calls happened then ID is changed, now that ID is stale from the page, So selenium throw this exception.)
+
+2. NoSuchElementException :- If element is not present in the DOM or we have given the the wrong locator of the element or element is present in any frame and we haven't switched that frame then selenium throw this exception.
+
+
+3. ElementNotVisibleException :-
+   
+   1. If element is present in the DOM but visibility is off, It means element is hidden.
+   2. If Duplicate Xpath is found by selenium. It means more than one elements has same      xpath.
+   3. If synchronization problem(If selenium is faster than application or vice versa.) occur then this exception thrown.
