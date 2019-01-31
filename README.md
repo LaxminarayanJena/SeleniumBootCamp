@@ -52,4 +52,5 @@ Relative xpath starts with double slash. In that case you will be first finding 
    3. If synchronization problem(If selenium is faster than application or vice versa.) occur then this exception thrown.
  ### 5)How to run a method multiple times using testng 
    @Test(invocationCount = 10)
-   
+  ### 5)Selenium exceptions  
+![seleniumexceptions](https://user-images.githubusercontent.com/24494133/52053575-b6108900-2527-11e9-9800-b84a8f379454.jpg)
