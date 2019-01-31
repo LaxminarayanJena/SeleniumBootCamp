@@ -50,3 +50,6 @@ Relative xpath starts with double slash. In that case you will be first finding 
    1. If element is present in the DOM but visibility is off, It means element is hidden.
    2. If Duplicate Xpath is found by selenium. It means more than one elements has same      xpath.
    3. If synchronization problem(If selenium is faster than application or vice versa.) occur then this exception thrown.
+ ### 5)How to run a method multiple times using testng 
+   @Test(invocationCount = 10)
+   
