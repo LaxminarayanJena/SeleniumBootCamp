@@ -54,3 +54,26 @@ Relative xpath starts with double slash. In that case you will be first finding 
    @Test(invocationCount = 10)
   ### 5)Selenium exceptions  
 ![seleniumexceptions](https://user-images.githubusercontent.com/24494133/52053575-b6108900-2527-11e9-9800-b84a8f379454.jpg)
+
+ ### 6)FindBy,FindBys,FindAll  
+```
+//anyone is correct it will work	
+	@FindBys({
+	@FindBy(xpath=".//*[@id='wizard-tabs']/div[1]/ul"),
+	@FindBy(xpath="//*[@id='tab-flight-tab-hp']")
+	})
+	public WebElement flightTab;
+	
+	//within 1stfindby it will search second findby
+
+@FindBy(xpath=".//li[@class='tab ']")
+public List<WebElement> tabCount;
+
+//anyone is correct it will work	
+	@FindAll({
+	@FindBy(xpath="//*[@id='gss-signin-submit1']"),
+	@FindBy(id="gss-signin-submit")
+	})
+	public WebElement submit;
+
+```
