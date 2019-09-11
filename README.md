@@ -89,7 +89,8 @@ WebElement webl = driver.findElement(By.xpath(“xpath_expression”));
 click element
 ----------------------
 WebElement nameInputField = driver.findElement(By.xpath(" "));
-<br>JavascriptExecutor executor = (JavascriptExecutor)driver;
-<br>executor.executeScript("arguments[0].click();", nameInputField);
+<br>JavascriptExecutor js = (JavascriptExecutor)driver;
+<br>js.executeScript("arguments[0].click();", nameInputField);
 <br>
-js.executeScript("document.getElementById('gbsa').click();");
+
+<br>js.executeScript("document.getElementById('gbsa').click();");
