@@ -77,7 +77,7 @@ public List<WebElement> tabCount;
 	public WebElement submit;
 
 ```
-Javascript executor
+### 7)Javascript executor
 Send text
 ---------
 WebElement webl = driver.findElement(By.xpath(“xpath_expression”));
@@ -94,3 +94,6 @@ WebElement nameInputField = driver.findElement(By.xpath(" "));
 <br>
 
 <br>js.executeScript("document.getElementById('gbsa').click();");
+### 8)Screenshot
+File scr = ( (TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+<br>FileUtils.copyFile(scr, new File("D//error.png"));
