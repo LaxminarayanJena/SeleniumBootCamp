@@ -95,5 +95,7 @@ WebElement nameInputField = driver.findElement(By.xpath(" "));
 
 <br>js.executeScript("document.getElementById('gbsa').click();");
 ### 8)Screenshot
-File scr = ( (TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+TakesScreenshot ts = ((TakesScreenshot) driver);
+<br>File scr = ts.getScreenshotAs(OutputType.FILE);
 <br>FileUtils.copyFile(scr, new File("D//error.png"));
+
