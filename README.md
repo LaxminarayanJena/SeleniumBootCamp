@@ -77,3 +77,15 @@ public List<WebElement> tabCount;
 	public WebElement submit;
 
 ```
+Javascript executor
+Send text
+---------
+WebElement webl = driver.findElement(By.xpath(“xpath_expression”));
+JavascriptExecutor js = (JavascriptExecutor)driver;
+js.executeScript(“arguments[0].value=’selenium’;”, webl);
+
+js.executeScript(“document.getElementsById(‘some_id’).value=’selenium’;”);
+
+click element
+----------------------
+js.executeScript("document.getElementById('gbsa').click();");
