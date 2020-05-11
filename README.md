@@ -97,5 +97,5 @@ WebElement nameInputField = driver.findElement(By.xpath(" "));
 ### 8)Screenshot
 TakesScreenshot ts = ((TakesScreenshot) driver);
 <br>File scr = ts.getScreenshotAs(OutputType.FILE);
-<br>FileUtils.copyFile(scr, new File("D//error.png"));
-
+<br>FileUtils.copyFile(scr, new File("D//error.png")); </br>
+down casting WebDriver to TakesScreenshot to use getScreenshotAs method.
