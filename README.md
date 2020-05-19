@@ -35,7 +35,8 @@ Relative xpath starts with double slash. In that case you will be first finding 
 <br>PASSED: doLogin
 <br>PASSED: composeEmail
 <br>PASSED: checkinbox
-
+### Priority order of different annotations
+-2,-1,no priority, 0 ,1,2
 
 ### 4)What is difference between StaleElementReferenceException and NoSuchElementException and ElementNotVisibleException  ?
 
