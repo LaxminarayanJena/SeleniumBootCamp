@@ -38,6 +38,21 @@ Relative xpath starts with double slash. In that case you will be first finding 
 ### Priority order of different annotations
 -2,-1,no priority, 0 ,1,2
 
+
+@optional
+----------------
+```
+@Parameters({"Test3"})
+ @Test
+ public void Parameter3(@Optional("Optional Parameter") String Test3){
+     System.out.println("Parameter is: "+Test3);
+ }
+
+
+<include name="Parameter3">
+<!--     <parameter name="Test3" value="Third Parameter"/>     -->
+</include>
+```
 ### 4)What is difference between StaleElementReferenceException and NoSuchElementException and ElementNotVisibleException  ?
 
 1. StaleElementReferenceException :- When Selenium trying to interact with an element at that time page got refreshed or ajax calls happened then selenium throw this exception.
