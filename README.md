@@ -115,3 +115,13 @@ TakesScreenshot ts = ((TakesScreenshot) driver);
 <br>File scr = ts.getScreenshotAs(OutputType.FILE);
 <br>FileUtils.copyFile(scr, new File("D//error.png")); </br>
 down casting WebDriver to TakesScreenshot to use getScreenshotAs method.
+points to consider while designing framework
+```
+Handle scripts and data separately
+Create libraries
+Follow coding standards
+Offer high extensibility
+Less maintenance
+Script/Framework version control
+Should have meaningful logging and reporting structure
+```
