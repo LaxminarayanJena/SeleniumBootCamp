@@ -125,3 +125,23 @@ Less maintenance
 Script/Framework version control
 Should have meaningful logging and reporting structure
 ```
+```
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+WebDriverWait wait = new WebDriverWait(driver,30);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
+
+Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
+			.withTimeout(30, TimeUnit.SECONDS) 			
+			.pollingEvery(5, TimeUnit.SECONDS) 			
+			.ignoring(NoSuchElementException.class);
+	
+WebElement button = wait.until(new Function<WebDriver, WebElement>(){
+	
+		public WebElement apply(WebDriver driver ) {
+			return driver.findElement(By.xpath(""));
+		}
+	});
+	button.click();
+```
+
