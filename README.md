@@ -116,6 +116,7 @@ TakesScreenshot ts = ((TakesScreenshot) driver);
 <br>FileUtils.copyFile(scr, new File("D//error.png")); </br>
 down casting WebDriver to TakesScreenshot to use getScreenshotAs method.
 points to consider while designing framework
+### 8)Automation framework standards
 ```
 Handle scripts and data separately
 Create libraries
@@ -125,6 +126,7 @@ Less maintenance
 Script/Framework version control
 Should have meaningful logging and reporting structure
 ```
+### 8)Waits
 ```
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
