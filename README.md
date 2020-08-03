@@ -1,5 +1,5 @@
 # SeleniumBootCamp
-
+selenium4 locators-toLeftOf(),toRightOf(),above(),below(),near(): 
 ### 1)Difference between findElement() and findElements()
 <br>On Zero Match : throws NoSuchElementException
 <br>On One Match : returns WebElement
