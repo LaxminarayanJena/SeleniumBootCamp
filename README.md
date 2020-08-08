@@ -110,6 +110,8 @@ WebElement nameInputField = driver.findElement(By.xpath(" "));
 <br>
 
 <br>js.executeScript("document.getElementById('gbsa').click();");
+### scroll
+js.executeScript("window.scrollBy(0,1000)");
 ### 8)Screenshot
 TakesScreenshot ts = ((TakesScreenshot) driver);
 <br>File scr = ts.getScreenshotAs(OutputType.FILE);
