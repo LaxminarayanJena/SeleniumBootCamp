@@ -158,4 +158,4 @@ Statement stmt = con.createStatement();
 stmt.executeQuery(select *  from employee;);
 ```
  #### Broken Links</br>
-[Broken Links](https://learn-automation.com/find-broken-links-using-selenium/)
+[Broken Links](https://www.toolsqa.com/selenium-webdriver/find-broken-links-in-selenium/)
