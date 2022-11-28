@@ -159,3 +159,6 @@ stmt.executeQuery(select *  from employee;);
 ```
  #### Broken Links</br>
 [Broken Links](https://www.toolsqa.com/selenium-webdriver/find-broken-links-in-selenium/)
+
+ #### WebTable</br>
+[Broken Links](https://www.guru99.com/handling-dynamic-selenium-webdriver.html)
