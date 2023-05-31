@@ -135,6 +135,7 @@ Should have meaningful logging and reporting structure
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 WebDriverWait wait = new WebDriverWait(driver,30);
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //latest
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
 
 Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
