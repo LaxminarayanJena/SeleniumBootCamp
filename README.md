@@ -165,3 +165,45 @@ stmt.executeQuery(select *  from employee;);
 [WebTable](https://www.guru99.com/handling-dynamic-selenium-webdriver.html)
 ![image](https://user-images.githubusercontent.com/24494133/204199163-964d11a8-fdb8-42f7-bab3-3cd14c58275c.png)
 
+### Iretry analyser
+```
+import org.testng.IAnnotationTransformer;
+import org.testng.annotations.ITestAnnotation;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+public class RetryListener implements IAnnotationTransformer {
+    @Override
+    public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+        annotation.setRetryAnalyzer(RetryAnalyzer.class);
+    }
+}
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class RetryAnalyzer implements IRetryAnalyzer {
+    private int retryCount = 0;
+    private static final int maxRetryCount = 3;
+
+    @Override
+    public boolean retry(ITestResult result) {
+        if (retryCount < maxRetryCount) {
+            retryCount++;
+            return true;
+        }
+        return false;
+    }
+}
+
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.example.tests.RetryListener"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="com.example.tests.YourTestClass"/>
+        </classes>
+    </test>
+</suite>
+```
