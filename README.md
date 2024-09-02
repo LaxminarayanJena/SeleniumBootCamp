@@ -114,6 +114,14 @@ WebElement nameInputField = driver.findElement(By.xpath(" "));
 js.executeScript("window.scrollBy(0,1000)");
 <br>je.executeScript("arguments[0].scrollIntoView(true);", element);
 
+
+### shadow elements
+<br> JavascriptExecutor js = (JavascriptExecutor) driver;
+<br>WebElement shadowHost = driver.findElement(By.cssSelector("css-selector-of-shadow-host"));// get the shadow root
+<br>WebElement shadowRoot = (WebElement) js.executeScript("return arguments[0].shadowRoot", shadowHost);//access the element inside the shadow root
+<br>WebElement shadowElement = shadowRoot.findElement(By.cssSelector("css-selector-inside-shadow-dom"));
+<br>shadowElement.click();
+
 ### 8)Screenshot
 TakesScreenshot ts = ((TakesScreenshot) driver);
 <br>File scr = ts.getScreenshotAs(OutputType.FILE);
