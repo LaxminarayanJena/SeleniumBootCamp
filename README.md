@@ -215,3 +215,16 @@ public class RetryAnalyzer implements IRetryAnalyzer {
     </test>
 </suite>
 ```
+
+</br>
+
+
+
+### Git stash and git rebase
+```
+git stash is used to temporarily save changes in your working directory without committing them.Run git stash apply to restore the stashed changes.
+git rebase is used to reapply commits on top of another base commit. Instead of merging, which creates a new commit to combine changes from different branches, rebasing rewrites the commit history.
+
+```
+
+
