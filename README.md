@@ -93,6 +93,12 @@ public List<WebElement> tabCount;
 	public WebElement submit;
 
 ```
+### 7)Property
+ Properties prop = new Properties(); </br>
+ FileInputStream file = new FileInputStream("path/to/config.properties"); </br>
+ prop.load(file); </br>
+ String browser = prop.getProperty("browser"); </br>
+ 
 ### 7)Javascript executor
 Send text
 ---------
@@ -128,6 +134,7 @@ TakesScreenshot ts = ((TakesScreenshot) driver);
 <br>FileUtils.copyFile(scr, new File("D//error.png")); </br>
 down casting WebDriver to TakesScreenshot to use getScreenshotAs method.
 points to consider while designing framework
+
 ### 8)Automation framework standards
 ```
 Handle scripts and data separately
