@@ -232,6 +232,12 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 git stash is used to temporarily save changes in your working directory without committing them.Run git stash apply to restore the stashed changes.
 git rebase is used to reapply commits on top of another base commit. Instead of merging, which creates a new commit to combine changes from different branches, rebasing rewrites the commit history.
 
+git cherry-pick is a Git command that allows you to apply a specific commit from one branch onto another branch. Instead of merging or rebasing entire branches, it enables you to take individual commits and add them to your current branch. This is useful when you want to introduce a specific feature, bug fix, or change from one branch without including all the other changes made in that branch.
+If you have a commit with hash a1b2c3d on feature-branch and you want to apply it to your current branch (main):
+git checkout main
+git cherry-pick a1b2c3d
+
+
 ```
 
 
