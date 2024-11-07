@@ -239,5 +239,9 @@ git cherry-pick a1b2c3d
 
 
 ```
+Interfaces-WebDriver ,Window,WebElement,TakesScreenshot,JavascriptExecutor,Alert   </br>
+Classes- ChromeDriver,By ,ExpectedConditions ,Actions,WebDriverWait  </br>
+Methods- getTitle() ,manage().window().maximize(),getCurrentUrl() ,click()  </br>
+
 
 
