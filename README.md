@@ -122,11 +122,19 @@ js.executeScript("window.scrollBy(0,1000)");
 
 
 ### shadow elements
-<br> JavascriptExecutor js = (JavascriptExecutor) driver;
-<br>WebElement shadowHost = driver.findElement(By.cssSelector("css-selector-of-shadow-host"));// get the shadow root
-<br>WebElement shadowRoot = (WebElement) js.executeScript("return arguments[0].shadowRoot", shadowHost);//access the element inside the shadow root
-<br>WebElement shadowElement = shadowRoot.findElement(By.cssSelector("css-selector-inside-shadow-dom"));
-<br>shadowElement.click();
+import org.openqa.selenium.By;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebElement;
+
+// locate shadow host <br>
+WebElement shadowHost = driver.findElement(By.cssSelector("now-input"));
+
+// get shadow root <br>
+SearchContext shadowRoot = shadowHost.getShadowRoot();
+
+// locate element inside shadow DOM <br>
+WebElement username = shadowRoot.findElement(By.cssSelector("#username"));
+username.sendKeys("test user");
 
 ### 8)Screenshot
 TakesScreenshot ts = ((TakesScreenshot) driver);
