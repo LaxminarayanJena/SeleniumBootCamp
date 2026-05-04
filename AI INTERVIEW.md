@@ -5,21 +5,12 @@ An AI agent is like a smart digital worker that understands a goal and performs 
 A user prompt is the instruction or question given by the end user, while a system prompt is a predefined instruction that controls the AI’s behavior, tone, and rules throughout the conversation.” </br>
 
 An MCP server acts like a bridge between an AI model and outside resources (files, databases, APIs, apps). </br>
+Prompt sensitivity means how much an AI model’s output changes when you slightly change the wording of your input \
+Wording sensitivity
+Order sensitivity,Detail sensitivity,Language / mixe
 
 
-Prompt sensitivity is the degree to which an AI model’s output changes when the input wording is slightly modified. In testing, we evaluate whether different phrasings of the same intent produce consistent and correct results. High sensitivity indicates instability, while low sensitivity indicates robustness.
-Intent: Book appointment
-
-1. Book appointment tomorrow at 5
-2. Schedule for tomorrow evening 5 PM
-3. Need doctor visit tomorrow 5 PM
-4. Kal 5 baje slot chahiye
-5. Any slot tomorrow at 5?
-
-</br>
-I categorize AI agent test cases into intent understanding, entity extraction, conversation flow, business logic validation, prompt sensitivity, hallucination handling, API integration, and edge case robustness. I focus on consistency and correctness rather than exact response matching.
-1. Intent understanding test cases
-
+```
 1. Intent understanding test cases
 
 Check if the agent correctly understands what the user wants.
@@ -200,15 +191,20 @@ Expected:
 - Date correct
 - Slot booked
 - Confirmation returned
+18. Key mindset shift (very important)
+
+Traditional QA:
+
+Exact match validation ❌
+
+AI QA:
+
+Behavior validation ✅
+Intent correctness ✅
+Outcome consistency ✅
 
 
-
- </br>
-![image](https://github.com/user-attachments/assets/07eec0c9-22f0-42dc-b145-26a216dea46d)
-</br>
-![image](https://github.com/user-attachments/assets/2e562644-6a43-4cf4-a430-267af324cada)
-
-
+```
 
 
  
